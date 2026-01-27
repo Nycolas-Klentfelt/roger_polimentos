@@ -3,6 +3,7 @@ import { Container, colors } from '../../styles'
 
 export const BoxHeader = styled.div`
   border-bottom: solid 1px ${colors.gray300};
+  box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
   height: 80px;
 
   ${Container} {
