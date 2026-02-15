@@ -7,7 +7,7 @@ const Hero = () => {
       <S.Container>
         <S.Grid>
           <S.HeroContent>
-            <S.HeroText>
+            <div>
               <S.HeroTagline>Excelência em Polimento</S.HeroTagline>
               <S.HeroTitle>Seu carro merece brilhar</S.HeroTitle>
               <S.HeroDescription>
@@ -15,7 +15,7 @@ const Hero = () => {
                 profissionais e produtos de alta qualidade. Proteção, brilho e
                 durabilidade garantidos.
               </S.HeroDescription>
-            </S.HeroText>
+            </div>
             <S.HeroActions>
               <S.PrimaryButton>Solicitar Orçamento</S.PrimaryButton>
               <S.SecondaryButton>Conhecer serviços</S.SecondaryButton>

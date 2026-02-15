@@ -59,7 +59,6 @@ function Services() {
             )
           })}
         </S.ServicesGrid>
-
         <S.InfoBox>
           <S.InfoGrid>
             <S.InfoItem>

@@ -146,6 +146,7 @@ export const CTALink = styled.a`
   padding: 12px 32px;
   border-radius: 8px;
   transition: background-color 300ms ease-out;
+  text-decoration: none;
 
   &:hover {
     background-color: #1e3a8a;

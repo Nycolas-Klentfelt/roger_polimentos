@@ -5,7 +5,7 @@ export const HeroSection = styled.div`
   position: relative;
   overflow: hidden;
   background-color: ${colors.white};
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 64px;
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -40,8 +40,6 @@ export const HeroContent = styled.div`
   flex-direction: column;
   gap: 24px;
 `
-
-export const HeroText = styled.div``
 
 export const HeroTagline = styled.span`
   display: inline-block;
@@ -123,7 +121,7 @@ export const SecondaryButton = styled.button`
 
 export const HeroStats = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 32px;
   padding-top: 32px;
   border-top: 1px solid #e5e7eb;

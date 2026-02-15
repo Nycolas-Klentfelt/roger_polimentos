@@ -60,7 +60,6 @@ function Gallery() {
             Veja os resultados incríveis que alcançamos com nossos clientes.
           </S.SectionDescription>
         </S.SectionHeader>
-
         <S.FilterContainer>
           {categories.map((category) => (
             <S.FilterButton
@@ -93,7 +92,6 @@ function Gallery() {
           <S.CTALink
             href="https://www.instagram.com/r_poliment0s/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Seguir no Instagram
           </S.CTALink>
