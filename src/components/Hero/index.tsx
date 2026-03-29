@@ -8,7 +8,6 @@ const Hero = () => {
         <S.Grid>
           <S.HeroContent>
             <div>
-              <S.HeroTagline>Excelência em Polimento</S.HeroTagline>
               <S.HeroTitle>Seu carro merece brilhar</S.HeroTitle>
               <S.HeroDescription>
                 Transformamos o acabamento do seu veículo com técnicas

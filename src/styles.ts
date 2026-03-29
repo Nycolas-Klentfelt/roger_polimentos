@@ -10,11 +10,14 @@ export const colors = {
   gray100: '#F3F4F6',
   gray200: '#E5E7EB',
   gray300: '#D1D5DB',
-  gray600: '#4B5563',
+  // gray600: '#4B5563',
+  gray600: '#b6bcc7',
   gray700: '#374151',
   gray900: '#111827',
   blue50: '#EFF6FF',
-  blue100: '#DBEAFE'
+  blue100: '#DBEAFE',
+  teste: '#0f0f0f',
+  teste2: '#000'
 }
 
 export const breakpoints = {

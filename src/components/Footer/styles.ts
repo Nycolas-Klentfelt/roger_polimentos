@@ -107,26 +107,3 @@ export const Copyright = styled.p`
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
 `
-
-export const SocialLinks = styled.div`
-  display: flex;
-  gap: 16px;
-`
-
-export const SocialIcon = styled.a`
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: ${colors.white};
-  font-size: 18px;
-  text-decoration: none;
-  transition: background-color 300ms ease-out;
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-`

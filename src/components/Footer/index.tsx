@@ -7,7 +7,6 @@ function Footer() {
     <S.FooterWrapper>
       <S.FooterContainer>
         <S.FooterGrid>
-          {/* Brand */}
           <S.BrandSection>
             <S.LogoWrapper>
               <S.BrandName>Roger Polimentos</S.BrandName>
@@ -22,24 +21,6 @@ function Footer() {
             <S.Copyright>
               © {currentYear} Roger Polimentos. Todos os direitos reservados.
             </S.Copyright>
-            <S.SocialLinks>
-              <S.SocialIcon
-                href="https://www.instagram.com/r_poliment0s/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Instagram"
-              >
-                📷
-              </S.SocialIcon>
-              <S.SocialIcon
-                href="https://wa.me/5511999999999"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="WhatsApp"
-              >
-                💬
-              </S.SocialIcon>
-            </S.SocialLinks>
           </S.BottomSection>
         </S.Divider>
       </S.FooterContainer>

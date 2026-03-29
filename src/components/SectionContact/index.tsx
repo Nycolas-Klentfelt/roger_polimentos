@@ -1,12 +1,14 @@
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 import * as S from './styles'
+import whatsAppImage from './../../assets/whatsapp-brands-solid (1).png'
+import instagramImage from './../../assets/instagram-brands-solid.png'
 
 function Contact() {
   const contactInfo = [
     {
       icon: Phone,
       label: 'Telefone',
-      value: '(11) 99999-9999',
+      value: '(41) 98896-5578',
       href: 'tel:+5511999999999'
     },
     {
@@ -70,15 +72,15 @@ function Contact() {
                   rel="noopener noreferrer"
                   title="Instagram"
                 >
-                  📷
+                  <img src={instagramImage} alt="" />
                 </S.SocialLink>
                 <S.SocialLink
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/5541988965578"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="WhatsApp"
                 >
-                  💬
+                  <img src={whatsAppImage} alt="" />
                 </S.SocialLink>
               </S.SocialLinks>
             </S.SocialSection>

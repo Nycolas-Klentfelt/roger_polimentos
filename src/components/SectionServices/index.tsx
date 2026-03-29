@@ -7,25 +7,29 @@ function Services() {
       icon: Sparkles,
       title: 'Polimento Profissional',
       description:
-        'Remoção de oxidação, riscos leves e restauração do brilho original com técnicas especializadas.'
+        'Remoção de oxidação, riscos leves e restauração do brilho original com técnicas especializadas.',
+      bgColor: 'white'
     },
     {
       icon: Shield,
       title: 'Proteção Cerâmica',
       description:
-        'Aplicação de revestimento cerâmico de longa duração para proteção contra agentes externos.'
+        'Aplicação de revestimento cerâmico de longa duração para proteção contra agentes externos.',
+      bgcolor: 'white'
     },
     {
       icon: Droplets,
       title: 'Hidrofobia',
       description:
-        'Tratamento especial que repele água e mantém seu carro limpo por mais tempo.'
+        'Tratamento especial que repele água e mantém seu carro limpo por mais tempo.',
+      bgColor: 'white'
     },
     {
       icon: Zap,
       title: 'Detalhamento Completo',
       description:
-        'Serviço completo incluindo limpeza profunda, polimento e aplicação de proteção.'
+        'Serviço completo incluindo limpeza profunda, polimento e aplicação de proteção.',
+      bgColor: 'white'
     }
   ]
 

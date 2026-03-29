@@ -4,9 +4,10 @@ import { breakpoints, colors, spacing } from '../../styles'
 export const HeroSection = styled.div`
   position: relative;
   overflow: hidden;
-  background-color: ${colors.white};
+  background-color: ${colors.teste2};
   padding-top: 50px;
   padding-bottom: 64px;
+  min-height: 100vh;
 
   @media (min-width: ${breakpoints.tablet}) {
     padding-top: 128px;
@@ -145,7 +146,7 @@ export const StatValue = styled.p`
 
 export const StatLabel = styled.p`
   font-size: 14px;
-  color: #4b5563;
+  color: ${colors.gray600};
 `
 
 export const HeroImageWrapper = styled.div`

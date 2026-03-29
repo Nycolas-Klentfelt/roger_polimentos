@@ -2,15 +2,14 @@ import styled from 'styled-components'
 import { breakpoints, colors } from '../../styles'
 
 export const ServicesWrapper = styled.section`
-  padding: 80px 1.5rem;
-  background-color: #f9fafb;
-
+  padding: 80px 1.5rem 0 1.5rem;
+  background-color: ${colors.teste};
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 128px 1.5rem;
+    padding: 128px 1.5rem 0 1.5rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 80px 1rem;
+    padding: 80px 1rem 0 1rem;
   }
 `
 
@@ -38,7 +37,7 @@ export const SectionTitle = styled.h2`
 
 export const SectionDescription = styled.p`
   font-size: 18px;
-  color: #4b5563;
+  color: ${colors.gray600};
 `
 
 export const ServicesGrid = styled.div`

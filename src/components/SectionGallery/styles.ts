@@ -1,16 +1,15 @@
 import styled from 'styled-components'
-import { breakpoints, colors, spacing } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const GalleryWrapper = styled.section`
-  padding: 80px ${spacing.lg};
-  background-color: ${colors.white};
-
+  padding: 80px 1.5rem 0 1.5rem;
+  background-color: ${colors.teste};
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 128px ${spacing.lg};
+    padding: 128px 1.5rem 0 1.5rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 80px ${spacing.md};
+    padding: 80px 1rem 0 1rem;
   }
 `
 
@@ -38,7 +37,7 @@ export const SectionTitle = styled.h2`
 
 export const SectionDescription = styled.p`
   font-size: 18px;
-  color: #4b5563;
+  color: ${colors.gray600};
 `
 
 export const FilterContainer = styled.div`
@@ -130,11 +129,10 @@ export const OverlayDescription = styled.p`
 
 export const CTASection = styled.div`
   text-align: center;
-  margin-bottom: 32px;
 `
 
 export const CTAText = styled.p`
-  color: #4b5563;
+  color: ${colors.gray600};
   margin-bottom: 24px;
 `
 

@@ -1,16 +1,16 @@
 import styled from 'styled-components'
-import { colors, spacing, breakpoints } from '../../styles'
+import { colors, breakpoints } from '../../styles'
 
 export const TestimonialsWrapper = styled.section`
-  padding: 80px ${spacing.lg};
-  background-color: #f9fafb;
+  padding: 80px 1.5rem 0 1.5rem;
+  background-color: ${colors.teste};
 
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 128px ${spacing.lg};
+    padding: 128px 1.5rem 0 1.5rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 80px ${spacing.md};
+    padding: 80px 1rem 0 1rem;
   }
 `
 
@@ -38,7 +38,7 @@ export const SectionTitle = styled.h2`
 
 export const SectionDescription = styled.p`
   font-size: 18px;
-  color: #4b5563;
+  color: ${colors.gray600};
 `
 
 export const TestimonialsGrid = styled.div`
@@ -126,5 +126,5 @@ export const StatNumber = styled.p`
 `
 
 export const StatLabel = styled.p`
-  color: #4b5563;
+  color: ${colors.gray600};
 `

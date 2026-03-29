@@ -3,7 +3,7 @@ import { colors, spacing, breakpoints } from '../../styles'
 
 export const ContactWrapper = styled.section`
   padding: 80px ${spacing.lg};
-  background-color: ${colors.white};
+  background-color: ${colors.teste};
 
   @media (min-width: ${breakpoints.tablet}) {
     padding: 128px ${spacing.lg};
@@ -38,7 +38,7 @@ export const SectionTitle = styled.h2`
 
 export const SectionDescription = styled.p`
   font-size: 18px;
-  color: #4b5563;
+  color: ${colors.gray600};
 `
 
 export const ContentGrid = styled.div`
@@ -58,8 +58,21 @@ export const InfoTitle = styled.h3`
 `
 
 export const InfoText = styled.p`
-  color: #4b5563;
+  color: ${colors.gray600};
   margin-bottom: 32px;
+  text-align: center;
+`
+
+export const InfoLabel = styled.p`
+  font-size: 14px;
+  color: #006aff;
+  font-weight: 500;
+`
+
+export const InfoValue = styled.p`
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
 `
 
 export const InfoItem = styled.a`
@@ -75,6 +88,10 @@ export const InfoItem = styled.a`
 
   &:hover {
     background-color: #eff6ff;
+
+    ${InfoValue} {
+      color: ${colors.teste};
+    }
   }
 `
 
@@ -103,38 +120,29 @@ export const IconColor = styled.div`
   }
 `
 
-export const InfoLabel = styled.p`
-  font-size: 14px;
-  color: #4b5563;
-  font-weight: 500;
-`
-
-export const InfoValue = styled.p`
-  font-size: 18px;
-  font-weight: 600;
-  color: #111827;
-`
-
 export const SocialSection = styled.div`
   padding-top: 32px;
-  border-top: 1px solid #e5e7eb;
 `
 
 export const SocialTitle = styled.h4`
   font-weight: 600;
-  color: #111827;
+  color: #006aff;
   margin-bottom: 16px;
 `
 
 export const SocialLinks = styled.div`
   display: flex;
   gap: 16px;
+
+  img {
+    width: 40px;
+  }
 `
 
 export const SocialLink = styled.a`
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+  background-color: #fff;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -143,10 +151,6 @@ export const SocialLink = styled.a`
   font-size: 20px;
   transition: all 300ms ease-out;
   text-decoration: none;
-
-  &:last-child {
-    background-color: #22c55e;
-  }
 
   &:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
