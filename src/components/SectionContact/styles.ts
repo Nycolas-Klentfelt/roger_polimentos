@@ -3,7 +3,7 @@ import { colors, spacing, breakpoints } from '../../styles'
 
 export const ContactWrapper = styled.section`
   padding: 80px ${spacing.lg};
-  background-color: ${colors.teste};
+  background-color: ${colors.teste2};
 
   @media (min-width: ${breakpoints.tablet}) {
     padding: 128px ${spacing.lg};

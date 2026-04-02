@@ -1,9 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
 export const colors = {
-  primary: '#1E40AF',
+  primary: '#1E90FF',
   primaryDark: '#1E3A8A',
-  primaryLight: '#3B82F6',
+  primaryLight: '#2563EB',
   white: '#FFFFFF',
   black: '#000000',
   gray50: '#F9FAFB',
@@ -16,8 +16,8 @@ export const colors = {
   gray900: '#111827',
   blue50: '#EFF6FF',
   blue100: '#DBEAFE',
-  teste: '#0f0f0f',
-  teste2: '#000'
+  teste: '#111827',
+  teste2: '#0B0F1A'
 }
 
 export const breakpoints = {
@@ -64,7 +64,7 @@ export const Container = styled.div`
 export const Button = styled.button`
   display: flex;
   color: ${colors.white};
-  background-color: ${colors.primary};
+  background-color: ${colors.primaryLight};
   font-size: 12px;
   font-weight: 600;
   padding: 16px 32px;

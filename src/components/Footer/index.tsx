@@ -20,6 +20,15 @@ function Footer() {
           <S.BottomSection>
             <S.Copyright>
               © {currentYear} Roger Polimentos. Todos os direitos reservados.
+              <br />
+              Desenvolvido por{' '}
+              <S.Link
+                href="https://www.instagram.com/nyck_fst"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Nycolas Klentfelt
+              </S.Link>
             </S.Copyright>
           </S.BottomSection>
         </S.Divider>

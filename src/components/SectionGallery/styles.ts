@@ -3,9 +3,9 @@ import { breakpoints, colors } from '../../styles'
 
 export const GalleryWrapper = styled.section`
   padding: 80px 1.5rem 0 1.5rem;
-  background-color: ${colors.teste};
+  background-color: ${colors.teste2};
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 128px 1.5rem 0 1.5rem;
+    padding: 128px 1.5rem 80px 1.5rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {

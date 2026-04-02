@@ -6,7 +6,7 @@ export const TestimonialsWrapper = styled.section`
   background-color: ${colors.teste};
 
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 128px 1.5rem 0 1.5rem;
+    padding: 128px 1.5rem 80px 1.5rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {

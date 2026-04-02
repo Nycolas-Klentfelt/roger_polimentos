@@ -83,7 +83,7 @@ export const HeroActions = styled.div`
 `
 
 export const PrimaryButton = styled.button`
-  background-color: ${colors.primary};
+  background-color: ${colors.primaryLight};
   color: ${colors.white};
   font-weight: 600;
   padding: 24px 32px;
@@ -97,7 +97,7 @@ export const PrimaryButton = styled.button`
   border: none;
 
   &:hover {
-    background-color: #1e3a8a;
+    background-color: #3b82f6;
   }
 `
 

@@ -5,7 +5,7 @@ export const ServicesWrapper = styled.section`
   padding: 80px 1.5rem 0 1.5rem;
   background-color: ${colors.teste};
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 128px 1.5rem 0 1.5rem;
+    padding: 128px 1.5rem 80px 1.5rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
@@ -52,7 +52,7 @@ export const ServicesGrid = styled.div`
 `
 
 export const ServiceCard = styled.div`
-  background-color: ${colors.white};
+  background-color: ${colors.gray600};
   padding: 32px;
   border-radius: 12px;
   border: 1px solid #e5e7eb;
@@ -68,7 +68,7 @@ export const ServiceCard = styled.div`
 export const IconWrapper = styled.div<{ isHovered?: boolean }>`
   width: 56px;
   height: 56px;
-  background-color: #eff6ff;
+  background-color: ${colors.primary};
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@ export const IconWrapper = styled.div<{ isHovered?: boolean }>`
 `
 
 export const IconColor = styled.div`
-  color: ${colors.primary};
+  color: ${colors.white};
   transition: color 300ms ease-out;
 
   ${ServiceCard}:hover & {
