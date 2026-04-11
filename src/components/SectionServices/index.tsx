@@ -1,6 +1,11 @@
 import { Sparkles, Shield, Zap, Droplets } from 'lucide-react'
 import * as S from './styles'
 
+import imageFarol from '../../assets/polFarol.jpeg'
+import imagePolComp from '../../assets/polComp.jpeg'
+import imageBancos from '../../assets/AntesDepoisBancos.jpeg'
+import imageLavagem from '../../assets/lavagem.jpeg'
+
 function Services() {
   const services = [
     {
@@ -33,6 +38,33 @@ function Services() {
     }
   ]
 
+  const servicesTeste = [
+    {
+      img: imageFarol,
+      title: 'Restauração de Farol',
+      description:
+        'Tratamento especial para restaurar o brilho e a clareza do farol.'
+    },
+    {
+      img: imagePolComp,
+      title: 'Polimento Completo',
+      description:
+        'Serviço completo de polimento e detalhamento para restaurar o brilho e a aparência do seu veículo.'
+    },
+    {
+      img: imageBancos,
+      title: 'Higienização de Bancos',
+      description:
+        'Tratamento especial para restaurar o brilho e a aparência dos bancos do veículo.'
+    },
+    {
+      img: imageLavagem,
+      title: 'Lavagem Completa',
+      description:
+        'Serviço completo de lavagem para manter seu veículo limpo e em perfeito estado.'
+    }
+  ]
+
   return (
     <S.ServicesWrapper id="services">
       <S.Container>
@@ -44,25 +76,20 @@ function Services() {
           </S.SectionDescription>
         </S.SectionHeader>
 
-        <S.ServicesGrid>
-          {services.map((service, index) => {
-            const Icon = service.icon
+        <S.TesteGrid>
+          {servicesTeste.map((serviceTeste, index) => {
             return (
-              <S.ServiceCard key={index}>
-                <S.IconWrapper>
-                  <S.IconColor>
-                    <Icon size={28} />
-                  </S.IconColor>
-                </S.IconWrapper>
-                <S.ServiceTitle>{service.title}</S.ServiceTitle>
-                <S.ServiceDescription>
-                  {service.description}
-                </S.ServiceDescription>
-                <S.DecorativeLine />
-              </S.ServiceCard>
+              <S.Teste key={index}>
+                <img src={serviceTeste.img} alt={serviceTeste.title} />
+                <div>
+                  <h2>{serviceTeste.title}</h2>
+                  <p>{serviceTeste.description}</p>
+                </div>
+              </S.Teste>
             )
           })}
-        </S.ServicesGrid>
+        </S.TesteGrid>
+
         <S.InfoBox>
           <S.InfoGrid>
             <S.InfoItem>

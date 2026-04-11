@@ -84,17 +84,22 @@ export const HeroActions = styled.div`
 
 export const PrimaryButton = styled.button`
   background-color: ${colors.primaryLight};
-  color: ${colors.white};
-  font-weight: 600;
-  padding: 24px 32px;
-  border-radius: 8px;
-  font-size: 18px;
   display: inline-flex;
   align-items: center;
+  border-radius: 8px;
   gap: 8px;
   transition: background-color 300ms ease-out;
   cursor: pointer;
   border: none;
+
+  a {
+    text-decoration: none;
+    color: ${colors.white};
+    font-weight: 600;
+    width: 100%;
+    padding: 24px 32px;
+    font-size: 18px;
+  }
 
   &:hover {
     background-color: #3b82f6;
@@ -103,17 +108,22 @@ export const PrimaryButton = styled.button`
 
 export const SecondaryButton = styled.button`
   border: 2px solid ${colors.primary};
-  color: ${colors.primary};
   background-color: transparent;
-  font-weight: 600;
-  padding: 22px 32px;
   border-radius: 8px;
-  font-size: 18px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   transition: all 300ms ease-out;
   cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: ${colors.primary};
+    font-weight: 600;
+    padding: 22px 32px;
+    font-size: 18px;
+    width: 100%;
+  }
 
   &:hover {
     background-color: #eff6ff;

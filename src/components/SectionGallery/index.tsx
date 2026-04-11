@@ -71,7 +71,6 @@ function Gallery() {
             </S.FilterButton>
           ))}
         </S.FilterContainer>
-
         <S.GalleryGrid>
           {filteredItems.map((item) => (
             <S.GalleryItem key={item.id}>
@@ -83,7 +82,6 @@ function Gallery() {
             </S.GalleryItem>
           ))}
         </S.GalleryGrid>
-
         <S.CTASection>
           <S.CTAText>
             Quer ver mais trabalhos? Visite nosso Instagram para uma galeria

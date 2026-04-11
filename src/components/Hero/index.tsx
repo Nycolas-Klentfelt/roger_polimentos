@@ -16,8 +16,18 @@ const Hero = () => {
               </S.HeroDescription>
             </div>
             <S.HeroActions>
-              <S.PrimaryButton>Solicitar Orçamento</S.PrimaryButton>
-              <S.SecondaryButton>Conhecer serviços</S.SecondaryButton>
+              <S.PrimaryButton>
+                <a
+                  href="http://wa.me/5541988965578"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Solicitar Orçamento
+                </a>
+              </S.PrimaryButton>
+              <S.SecondaryButton>
+                <a href="#services">Conhecer serviços</a>
+              </S.SecondaryButton>
             </S.HeroActions>
             <S.HeroStats>
               <S.StatItem>

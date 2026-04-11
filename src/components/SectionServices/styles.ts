@@ -4,12 +4,13 @@ import { breakpoints, colors } from '../../styles'
 export const ServicesWrapper = styled.section`
   padding: 80px 1.5rem 0 1.5rem;
   background-color: ${colors.teste};
+
   @media (min-width: ${breakpoints.tablet}) {
     padding: 128px 1.5rem 80px 1.5rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 80px 1rem 0 1rem;
+    padding: 80px 1rem 80px 1rem;
   }
 `
 
@@ -62,6 +63,13 @@ export const ServiceCard = styled.div`
   &:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     transform: translateY(-4px);
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
   }
 `
 
@@ -148,4 +156,51 @@ export const InfoTitle = styled.h4`
 export const InfoText = styled.p`
   color: #4b5563;
   font-size: 14px;
+`
+
+export const TesteGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 64px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    grid-template-columns: 1fr;
+  }
+`
+
+export const Teste = styled.div`
+  display: flex;
+  gap: 32px;
+  background-color: ${colors.gray600};
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: all 300ms ease-out;
+  cursor: pointer;
+
+  img {
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 24px;
+    color: ${colors.primary};
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  p {
+    color: #4b5563;
+    line-height: 1.6;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `

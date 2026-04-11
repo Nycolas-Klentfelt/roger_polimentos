@@ -25,7 +25,11 @@ export default function Header() {
             </S.NavLink>
           ))}
         </S.Nav>
-        <S.CTAButton>Solicitar Orçamento</S.CTAButton>
+        <S.CTAButton>
+          <a href="http://wa.me/5541988965578" target="_blank" rel="noreferrer">
+            Solicitar Orçamento
+          </a>
+        </S.CTAButton>
 
         <S.MobileMenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? (
@@ -46,7 +50,11 @@ export default function Header() {
             {item.label}
           </S.MobileNavLink>
         ))}
-        <S.MobileCtaButton>Solicitar Orçamento</S.MobileCtaButton>
+        <S.MobileCtaButton>
+          <a href="http://wa.me/5541988965578" target="_blank" rel="noreferrer">
+            Solicitar Orçamento
+          </a>
+        </S.MobileCtaButton>
       </S.MobileNav>
     </S.HeaderWrapper>
   )

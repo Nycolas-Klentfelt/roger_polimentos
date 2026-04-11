@@ -56,12 +56,17 @@ export const CTAButton = styled.button`
   display: none;
   background-color: ${colors.primary};
   color: ${colors.white};
-  font-weight: 600;
-  padding: ${spacing.md} ${spacing.xl};
   border: none;
   border-radius: 16px;
   transition: background-color 300ms ease-out;
   cursor: pointer;
+
+  a {
+    color: ${colors.white};
+    text-decoration: none;
+    font-weight: 600;
+    padding: ${spacing.md} ${spacing.xl};
+  }
 
   @media (min-width: ${breakpoints.tablet}) {
     display: inline-flex;
@@ -126,6 +131,13 @@ export const MobileCtaButton = styled.button`
   margin-top: ${spacing.md};
   transition: background-color 300ms ease-out;
   cursor: pointer;
+
+  a {
+    color: ${colors.white};
+    text-decoration: none;
+    font-weight: 600;
+    padding: ${spacing.md} ${spacing.xl};
+  }
 
   &:hover {
     background-color: #1e3a8a;

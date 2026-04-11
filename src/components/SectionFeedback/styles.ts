@@ -10,7 +10,7 @@ export const TestimonialsWrapper = styled.section`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 80px 1rem 0 1rem;
+    padding: 80px 1rem 80px 1rem;
   }
 `
 
