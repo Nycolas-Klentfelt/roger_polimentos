@@ -1,4 +1,3 @@
-import { Sparkles, Shield, Zap, Droplets } from 'lucide-react'
 import * as S from './styles'
 
 import imageFarol from '../../assets/polFarol.jpeg'
@@ -8,37 +7,6 @@ import imageLavagem from '../../assets/lavagem.jpeg'
 
 function Services() {
   const services = [
-    {
-      icon: Sparkles,
-      title: 'Polimento Profissional',
-      description:
-        'Remoção de oxidação, riscos leves e restauração do brilho original com técnicas especializadas.',
-      bgColor: 'white'
-    },
-    {
-      icon: Shield,
-      title: 'Proteção Cerâmica',
-      description:
-        'Aplicação de revestimento cerâmico de longa duração para proteção contra agentes externos.',
-      bgcolor: 'white'
-    },
-    {
-      icon: Droplets,
-      title: 'Hidrofobia',
-      description:
-        'Tratamento especial que repele água e mantém seu carro limpo por mais tempo.',
-      bgColor: 'white'
-    },
-    {
-      icon: Zap,
-      title: 'Detalhamento Completo',
-      description:
-        'Serviço completo incluindo limpeza profunda, polimento e aplicação de proteção.',
-      bgColor: 'white'
-    }
-  ]
-
-  const servicesTeste = [
     {
       img: imageFarol,
       title: 'Restauração de Farol',
@@ -77,13 +45,13 @@ function Services() {
         </S.SectionHeader>
 
         <S.TesteGrid>
-          {servicesTeste.map((serviceTeste, index) => {
+          {services.map((service, index) => {
             return (
               <S.Teste key={index}>
-                <img src={serviceTeste.img} alt={serviceTeste.title} />
+                <img src={service.img} alt={service.title} />
                 <div>
-                  <h2>{serviceTeste.title}</h2>
-                  <p>{serviceTeste.description}</p>
+                  <h2>{service.title}</h2>
+                  <p>{service.description}</p>
                 </div>
               </S.Teste>
             )
